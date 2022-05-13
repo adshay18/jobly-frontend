@@ -36,21 +36,19 @@ const SearchForm = ({ addCompanies, addJobs, type }) => {
 	};
 
 	return (
-		<Form className="SearchForm" onSubmit={handleSubmit}>
-			<FormGroup>
-				<Input
-					className="SearchForm-input"
-					type="text"
-					placeholder="Enter search term..."
-					name="searchTerm"
-					value={formData.searchTerm}
-					onChange={handleChange}
-				/>
-				<Button className="SearchForm-button" type="submit">
-					Submit
-				</Button>
-			</FormGroup>
-		</Form>
+		<form className="SearchForm" onSubmit={handleSubmit}>
+			<input
+				className="SearchForm-input"
+				type="text"
+				placeholder="Enter search term..."
+				name="searchTerm"
+				value={formData.searchTerm}
+				onChange={handleChange}
+			/>
+			<button className="SearchForm-button" type="submit">
+				Submit
+			</button>
+		</form>
 	);
 };
 

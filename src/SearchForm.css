@@ -1,7 +1,30 @@
-/* .SearchForm-input {
-	display: inline;
+.SearchForm {
+	display: flex;
+	flex-direction: row;
+	border: 1px solid grey;
+	border-radius: 4px;
+	padding: 2px;
+	width: 100%;
+	margin-bottom: 15px;
+}
+
+.SearchForm-input {
+	flex-grow: 2;
+	border: none;
+}
+
+.SearchForm-input:focus {
+	outline: none;
 }
 
 .SearchForm-button {
-	display: inline;
-} */
+	border: 1px solid #91bdff;
+	background: #91bdff;
+	color: white;
+	border-radius: 4px;
+}
+
+.SearchForm-button:hover {
+	border: 1px solid #287eff;
+	background: #287eff;
+}
